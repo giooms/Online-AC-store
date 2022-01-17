@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+/* pour que header + page fassent 100% de la page */
+.header_form{
+    background-color: #F7F9FB;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+
+/* position du formulaire */
+.intérieur {
+    position: relative;
+    top: 16vh;
+}
+
+.texte{
+    border-radius: 15px;
+    height: 290px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 0;
+    border-style: solid;
+    border-color: #91CEC2;
+    background-color: white ;
+}
+.texte h3 {
+    font-size: 26px;
+    color: #91CEC2;
+}
+.texte input{
+    margin: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    min-height: 30px;
+    min-width: 200px;
+    outline: transparent;
+}
+#cookie{
+    box-shadow: 0;
+    min-height: 0;
+    min-width: 0;
+}
+#envoyer {
+    font-size: 20px;
+    background-color:#91CEC2 ;
+    cursor: pointer;
+    color: white;
+}
+.texte p{
+    font-size: 10px;
+}

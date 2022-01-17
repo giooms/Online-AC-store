@@ -1,0 +1,58 @@
+.payer{
+    height: 83vh;
+    position: relative;
+}
+
+.contenu{
+    margin: 50px auto auto 15%;
+    text-align: center;
+    position: relative;
+    width: 600px;
+}
+
+.tableau{
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    width: 600px;
+    border-radius: 5px 5px 0 0 ;
+    overflow: hidden;
+}
+.tableau tr th{
+    background-color:#91CEC2;
+    color: white;
+}
+.tableau tr td{
+    border: 1px solid #dddddd;
+}
+.tableau tr:last-of-type{
+    border-bottom: 8px solid #91CEC2;
+}
+.paypal{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    border-radius: 15px;
+    background-color: #91CEC2;
+    color: white;
+    margin: 15px;
+}
+.paypal h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial;
+}
+.data, .frais {
+    margin-left: 15px;
+    font-family: Arial;
+}
+.data h3, .frais h3{
+    font-size: 24px;
+}
+.frais ul{
+    list-style: none;
+}
+.frais h4{
+    font-size: 20px;
+}

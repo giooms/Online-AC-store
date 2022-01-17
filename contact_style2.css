@@ -1,0 +1,148 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+
+/* pour que header + page fassent 100% de la page */
+.header_form{
+    height: 100vh;
+    min-height: 100vh;
+}
+
+/* position du formulaire */
+.interieur {
+    position: relative;
+    padding: 20px;
+}
+
+
+/* format et style du texte */
+.texte {
+    background-color: #91CEC2;
+    border-radius: 15px;
+    height: 500px;
+    width: 550px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 0;
+}
+
+/*style des input*/
+.texte h2 {
+    font-size: 30px;
+    color: white;
+    margin: 15px;
+}
+.prenom {
+    margin: 15px 30px 30px 30px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.16);
+    font-size: 16px;
+}
+.nom {
+    margin: 0 0 25px 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.16);
+    font-size: 16px;
+}
+.email {
+    margin: 15px 30px 30px 30px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.16);
+    font-size: 16px;
+}
+.tel {
+    margin: 0 0 25px 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.16);
+    font-size: 16px;
+}
+
+.rond p{
+    font-size: 18px;
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+.rond label {
+    color: white;
+}
+.raison {
+    cursor: pointer;
+}
+
+.select label{
+    font-size: 18px;
+    color: white;
+}
+.select .rdv{
+    margin: 10px;
+}
+
+
+.modele p{
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.boite {
+    margin: 0 0 0 40px;
+    cursor: pointer;
+}
+
+/* position des inputs*/
+.prenom_nom{
+    float: left;
+}
+.adresse{
+    float: right;
+}
+.rond {
+    float: left;
+    width: 220px;
+    margin: 0 20px 10px 20px;
+}
+.select {
+    float: right;
+    width: 220px;
+    margin: 0 30px 0 20px;
+}
+
+.modele {
+    position: absolute;
+    color: white;
+    width: 220px;
+    text-align: left;
+    margin: 35px 0 0 10px;
+}
+
+
+/* format et style bouton */
+.bouton {
+    font-size: 22px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 60px;
+    width: 160px;
+    color: #91CEC2;
+    background-color: white;
+    float: right;
+    margin: 50px 65px 0 0 ;
+}
+
+.bouton:hover {
+    transform: scale(0.92);
+}

@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+/* pour que header + page fassent 100% de la page */
+.header_form{
+    height: 100vh;
+    min-height: 100vh;
+}
+
+
+/* position du formulaire */
+.intérieur {
+    position: relative;
+    top: 16vh;
+}
+
+
+/* format et style du texte */
+.texte {
+    background-color: #91CEC2;
+    border-radius: 15px;
+    height: 290px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 0;
+}
+
+.texte h2 {
+    font-size: 30px;
+    color: white;
+    margin: 10px 10px 40px 10px;
+}
+
+
+/* format et style bouton */
+.bouton {
+    font-size: 18px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    background-color: white;
+    color:#91CEC2 ;
+    margin-bottom: 20px;
+}
+.bouton:hover {
+    transform: scale(0.92);
+}

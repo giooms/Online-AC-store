@@ -1,0 +1,288 @@
+/* hauteur de toutes les sections */
+section{
+    min-height: 400px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* couleur de fond pour les sections */ 
+.produit1{
+    background-color: #D7DFD4 ;
+    padding-top: 20px;
+}
+
+.produit2 {
+    background-color: #A2AAB0 ;
+    padding-top: 20px;
+}
+
+.produit3 {
+    background-color: #F7DFD4 ;
+    padding-top: 20px;
+}
+
+
+
+/* forme du cadre contenant photo et infos */
+.cadre{
+    height: 420px;
+    width: 654px;
+    margin: 50px auto;
+    border-radius: 7px ;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow .3s;
+}
+
+.cadre:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* style image */
+.image_produit {
+    float: left;
+}
+.image_produit img {
+    border-radius: 7px 0 0 7px;
+}
+
+
+/*style des infos */
+.infos{
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: white;
+    position: relative;
+}
+
+.texte {
+    height: 300px;
+    width: 327px;
+}
+
+.texte h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 34px;
+    font-family: Arial;
+    color: black;
+}
+
+.texte h2 {
+    margin: 0 0 47px 38px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+}
+
+.texte p {
+    height: 125px;
+    margin: 0 20px 0 20px;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+    text-align: justify;
+}
+
+
+/* style et format du prix */
+.prix p {
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    height: 50px;
+    font-family: Arial;
+    margin: 0 0 0 38px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #474747; 
+}
+.span {
+    display: inline-block;
+    height: 50px;
+    font-size: 34px
+}
+
+/* Détails */
+
+.specifications {
+    background: rgba(27, 26, 26, 0.6);
+    font-family: Arial;
+    transform: translateX(-98%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 18px;
+    color: #FFF;
+    height: 420px;
+    width: 327px;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    border-radius:7px 0 0 7px ;
+    left: 0;
+    top: 0;
+}
+
+.specifications h2 {
+    text-align: center;
+    font-size: 24x;
+}
+.cadre:hover .specifications{
+    transform: translateX(-100%);
+    visibility: visible;
+}
+
+
+/* Commentaires */
+.commentaire{
+    margin: 25px 0;
+    font-family: Arial;
+}
+
+#apparition1{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+  }
+  
+  #apparition1:checked ~ dialog {  /*Une fois que la checkbox est check, comment se comporte dialog */
+    display: block;
+    top: -0.5%;
+    left: 110%;
+  }
+  
+/* plusieurs fois le même code pour éviter que tout pop en même temps*/
+
+  #apparition2{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+  }
+  
+  #apparition2:checked ~ dialog {
+    display: block;
+    top: -0.5%;
+    left: 110%;
+  }
+
+  #apparition3{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+  }
+  
+  #apparition3:checked ~ dialog {
+    display: block;
+    top: -0.5%;
+    left: 110%;
+  }
+
+  label{
+    background: #91CEC2;
+    color: white;
+    padding: .5em 1em;
+    margin:  40px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  @keyframes appear {
+    0%{
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+  }
+  
+  dialog{
+    animation: appear 350ms ease-in 1;
+    min-width: 327px;
+    min-height: 420px ;
+    border-radius: 7px;
+    border-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 0;
+  }
+  dialog label{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 6px 6px;
+  }
+  dialog h3 {
+    font-size: 20px;
+    color: #91CEC2;
+    padding: 0;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .ajouter {
+      position: absolute;
+      bottom: 5px;
+  }
+  #ajouter {
+    margin-top: 45px ;
+  }
+  dialog input, select{
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: left;
+    max-width: 170px;
+    min-height: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    outline: transparent;
+  }
+  #aj {
+      background-color: #91CEC2;
+      color: white;
+      padding: 8px;
+      cursor: pointer;
+  }
+  dialog li, h4 {
+      margin: 3px 0;
+  }
+
+
+
+/* Bouton */
+
+.achat{
+	position: absolute;
+	bottom: 15px;
+	left: 25px;
+	width: 250px;
+}
+
+.achat b {
+    font-size: 36px;
+    float: right;
+    font-family: Arial;
+    position: relative;
+}
+.bouton {
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background: #91CEC2;
+	border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+	border: none;
+	color: #fff;
+	padding: 8px 16px;
+    margin: 0;
+	
+}
+
+.bouton:hover{
+    transform: translateY(-4px);
+}

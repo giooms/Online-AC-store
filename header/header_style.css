@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+  }
+/* Style du background */
+.header {
+  overflow: hidden; /* pour que l'image se mette bien */
+  background: url(header/images/header1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  padding: 10px 50px 10px 40px;
+}
+  
+/* Style des liens */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none; /*retirer l'underline */
+  font-family: Arial;
+  font-size: 30px;
+  margin: 0px 25px 0px 15px;
+}
+
+    
+/* Mettre les liens à droite */
+.menu {
+  float: right;
+  margin: 10px 0px;
+}
+
+.base {
+  margin-right: 80px;
+}
+
+.images {
+  display: block;
+  position: absolute;
+  right: 0;
+  margin-top: -8px;
+}
+#privé{
+  margin-left: -10px;
+}
+  
+/* Effet sur les liens */
+.base a::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+  
+.base a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+  
+.base a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(145, 206, 194, 0.6);
+  border-radius: 2px;
+  transition: transform .3s ease;
+}
+  
+.base a {
+  position: relative;
+  font-size: 30px;
+}
+
+/* Effet sur liens images */
+.logo :hover {
+  transform: scale(1.1);
+}
+
+.images :hover{
+  transform: scale(1.1);
+}

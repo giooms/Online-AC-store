@@ -1,0 +1,79 @@
+main{
+    height: 90vh;
+    font-family: Arial;
+}
+
+.hello{
+    height: 90vh;
+    width: 30%;
+    position: relative;
+    float: left;
+    background-color: #91CEC2 ;
+    color: white;
+    text-align: center;
+}
+.info{
+    height: 90vh;
+    width: 70%;
+    position: relative;
+    float: right;
+    background-color: #F7F9FB ;
+}
+.info h2{
+    text-align: center;
+}
+.data{
+    position: absolute;
+    left: 50px;
+}
+.adresse{
+    position: absolute;
+    right: 350px;
+}
+
+.bouton1 {
+    font-size: 18px;
+    border: transparent;
+    border-radius: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    background-color: white;
+    margin: 15px 0 10px 0;
+}
+
+.bouton2 {
+    font-size: 18px;
+    border: transparent;
+    border-radius: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 70px;
+    width: 180px;
+    background-color: #91CEC2;
+    margin: 15px 0 10px 0;
+    position: absolute;
+    bottom: 50px;
+    left: 42% ;
+}
+
+#deco {
+    font-size: 18px;
+    border: transparent;
+    border-radius: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 70px;
+    width: 180px;
+    background-color: #91CEC2;
+    color: white;
+    margin: 15px 0 10px 0;
+    position: absolute;
+    bottom: 50px;
+    right: 50px ;
+}
+
+.bouton1:hover , .bouton2:hover, #deco {
+    transform: scale(0.92);
+}

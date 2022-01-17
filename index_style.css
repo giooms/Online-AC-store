@@ -1,0 +1,285 @@
+/* section 1 */
+.arrivee{
+    height: 90vh;
+    min-height: 90vh;
+    background-color: #F7F9FB;
+    font-family: Arial;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    padding: 130px 30px 0 0;
+}
+
+.arrivee h2 {
+    padding: 170px 0 20px 160px;
+    margin: 0;
+    font-size: 80px;
+    width: 30%;
+}
+
+.arrivee p {
+    font-size: 26px;
+    font-family: Arial;
+    color: #91CEC2;
+    width: 45%;
+    padding: 0 0 0 160px;
+}
+
+  /* inscrivez-vous */
+
+
+      
+.inscription{
+    background: #91CEC2;
+    color: white;
+    padding: .5em 1em;
+    margin: 0px 160px;
+    border-radius: 4px;
+    border-color: #91CEC2;
+    text-decoration: none;
+}
+  
+    /* connectez-vous */
+
+    .connexion{
+        margin: 25px 0;
+    }
+
+    #apparition2{
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+      }
+      
+      #apparition2:checked ~ dialog {   /* Quand le label est check alors on fait apparaître le dialog */ 
+        display: block;
+        margin: auto;
+        top: 15%;
+        left: 10%;
+      }
+      
+      label{
+        background: #91CEC2;
+        color: white;
+        padding: .5em 1em;
+        margin:  40px 135px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      @keyframes appear {
+        0%{
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+      }
+      
+      dialog{
+        animation: appear 350ms ease-in 1;
+        max-width: 500px;
+        min-height: 20vh ;
+        min-width: 300px;
+        border-radius: 15px;
+        border-color: #91CEC2;
+        background-color: rgba(white, white, white, 0.5);
+        text-align: center;
+      }
+      dialog label{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 6px 6px;
+      }
+      dialog h3 {
+        font-size: 26px;
+        color: #91CEC2;
+      }
+      dialog input{
+        margin: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+        min-height: 30px;
+        min-width: 200px;
+        outline: transparent;
+      }
+      #cookie{
+        box-shadow: 0;
+        min-height: 0;
+        min-width: 0;
+      }
+      #envoyer {
+        font-size: 20px;
+        background-color:#91CEC2 ;
+        cursor: pointer;
+        color: white;
+      }
+
+
+
+/* section 2 */
+.infos{
+    height: 50vh;
+    min-height: 50vh;
+    background-color: #303C6C;
+    text-align: center;
+    font-family: Arial;
+}
+
+.infos h2 {
+    font-size: 36px;
+    color: #91CEC2 ;
+    margin: 0;
+    padding: 30px 0 55px 0;
+}
+
+.infos p {
+    font-size: 24px;
+    color: white;
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+
+/* section 3 */
+.services {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #F7F9FB;
+    text-align: center;
+    font-family: Arial;
+}
+
+.services h2{
+    font-size: 36px;
+    color: #91CEC2 ;
+    margin: 0;
+    padding: 30px 0 70px 0;
+}
+
+.box {
+    width: 1200px;
+    height: 350px;
+    margin: 40px auto;
+}
+
+.box img {
+    margin: 15px 0;
+}
+
+.box h3 {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+}
+
+.box p {
+    font-size: 16px;
+    margin: 35px 37px 0 37px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.installation {
+    border-radius: 15px;
+    height: 450px;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 65px;
+    float: left;
+    transition: box-shadow .3s;
+}
+
+.installation:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.apresvente {
+    border-radius: 15px;
+    height: 450px;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 85px;
+    float: left;
+    transition: box-shadow .3s;
+}
+
+.apresvente:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.vent {
+    border-radius: 15px;
+    height: 450px;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 85px;
+    float: left;
+    transition: box-shadow .3s;
+}
+
+.vent:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* section 4 */
+.corona{
+    height: 50vh;
+    min-height: 50vh;
+    background-color: #303C6C;
+    text-align: center;
+    font-family: Arial;
+}
+
+.corona h2 {
+    font-size: 36px;
+    color: #91CEC2 ;
+    margin: 0;
+    padding: 30px 0 55px 0;
+}
+
+.corona p {
+    font-size: 24px;
+    color: white;
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+
+/* section 5 */
+.app {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #F7F9FB;
+    text-align: center;
+    font-family: Arial;
+}
+
+.app h2{
+    font-size: 36px;
+    color: #91CEC2 ;
+    margin: 0;
+    padding: 30px 0 30px 0;
+}
+
+.app p {
+    float: right;
+    font-size: 24px;
+    line-height: 125%;
+    width: 600px;
+    margin: 160px 130px 0 0;
+    text-align: left;
+}
+
+.app img {
+    float: left;
+    margin: 40px 0 0 -30px ;
+}
+
+
